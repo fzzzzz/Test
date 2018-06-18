@@ -27,6 +27,7 @@
 			color: red;
 		}
 	</style>
+
 	<body>
 		<div id="app">
 			<input type="text" v-model="tx" v-on:keyup.enter="add" />
@@ -40,6 +41,8 @@
 			<button v-on:click="delect">清除</button>
 		</div>
 	</body>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script type="text/javascript">
 		var itm = localStorage.getItem("itm") ? JSON.parse(localStorage.getItem("itm")) : [];
 		var app = new Vue({
@@ -55,7 +58,7 @@
 							name: this.tx,
 							color: false
 						})
-					}else{
+					} else {
 						alert("空的有什么用?")
 					}
 				},
