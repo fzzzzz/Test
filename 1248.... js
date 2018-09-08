@@ -1,6 +1,4 @@
 
-demo(56)
-
 function demo(nn){
 	var arr = [];
 
@@ -24,3 +22,5 @@ function num(n){
 	}
 	return i;
 }
+
+demo(56)
